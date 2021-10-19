@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image | Slider | by | js</title>
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2" id="smallImage">
+            <div class="card">
+                <img src="a.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="b.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="c.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="d.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-6" id="mainImage">
+            <div class="box">
+                <img src="d.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        $(document).ready(function () {
+            $('#smallImage img').click(function () {
+                var smallImg = $(this).attr('src');
+                $('#mainImage img').attr('src', smallImg)
+            })
+        })
+
+    </script>
+</body>
+
+</html>
