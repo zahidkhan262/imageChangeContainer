@@ -12,36 +12,27 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-2" id="smallImage">
-            <div class="card">
-                <img src="a.jpg" alt="">
-            </div>
-            <div class="card">
-                <img src="b.jpg" alt="">
-            </div>
-            <div class="card">
-                <img src="c.jpg" alt="">
-            </div>
-            <div class="card">
-                <img src="d.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-6" id="mainImage">
-            <div class="box">
-                <img src="d.jpg" alt="">
-            </div>
+    <div class="container">
+
+        <div class="box" id="main-img">
+            <img src="d.jpg" alt="">
         </div>
     </div>
+    <ul class="small-img">
+        <li><img src="a.jpg" alt=""></li>
+        <li><img src="b.jpg" alt=""></li>
+        <li><img src="c.jpg" alt=""></li>
+        <li><img src="d.jpg" alt=""></li>
+    </ul>
 
 
     <script>
 
 
         $(document).ready(function () {
-            $('#smallImage img').click(function () {
+            $('.small-img img').click(function () {
                 var smallImg = $(this).attr('src');
-                $('#mainImage img').attr('src', smallImg)
+                $('#main-img img').attr('src', smallImg)
             })
         })
 
