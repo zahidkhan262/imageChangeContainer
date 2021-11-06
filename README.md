@@ -1,3 +1,3 @@
 # jsImageSlider
 
-https://zahidkhan262.github.io/jsImageSlider/
+https://zahidkhan262.github.io/imageChangeContainer/
